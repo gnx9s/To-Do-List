@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+        <form id="to-doForm">
+            <p>Adicione a sua tarefa:</p>
+            <div class="formcontrol">
+                <input type="text" id="to-doForm" placeholder="O que você pretende fazer?">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="">
+            <p>Edite a sua tarefa:</p>
+            <div class="formcontrol">
+                <input type="text" id="edit-form">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+        </form>
+        <button id="cancel-edit-btn">Cancelar</button>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="serach-input" placeholder="Buscar...">
+                    <button id="eraseButton">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="to-do">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div id="to-doList">
+            <div class="to-do">
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finishTo-Do">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editTo-Do">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="removeTo-Do">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="to-do">
+                <h3>Sei lá...</h3>
+                <button class="finishTo-Do">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editTo-Do">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="removeTo-Do">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="to-do">
+                <h3>Estudar JavaScript...</h3>
+                <button class="finishTo-Do">
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="editTo-Do">
+                    <i class="fa-solid fa-pen"></i>
+                </button>
+                <button class="removeTo-Do">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
